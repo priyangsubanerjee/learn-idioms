@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -45,10 +46,12 @@ export default function Home() {
           />
         </div>
         <ul className="text-blue-600/90 mt-6">
-          <li className="flex items-center space-x-3 py-3 px-2 border-b">
-            <i class="bi bi-shuffle"></i>
-            <span>Random</span>
-          </li>
+          <Link href={"/quote"}>
+            <li className="flex items-center space-x-3 py-3 px-2 border-b">
+              <i class="bi bi-shuffle"></i>
+              <span>Random</span>
+            </li>
+          </Link>
           <li className="flex items-center space-x-3 py-3 px-2 border-b">
             <i class="bi bi-activity"></i>
             <span>Trending</span>
