@@ -66,6 +66,15 @@ export default function Home() {
             <span>Favourites</span>
           </li>
         </ul>
+        <div className="bg-gradient-to-r from-fuchsia-50 to-blue-50 p-4 mt-5 rounded-md">
+          <p className="text-xs leading-6 text-zinc-900">
+            Hey there! This is a work in progress. If you want to help out, you
+            can contribute more idioms and categories to the project.
+          </p>
+          <button className="text-sm font-semibold bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-500 to-blue-500 mt-2">
+            Contribute
+          </button>
+        </div>
       </div>
     </div>
   );
